@@ -122,8 +122,8 @@ void interactiveShowData(void) {
     static int64_t next_update;
     static int64_t next_clear;
     int64_t now = mstime();
-#    char progress;
-#    char spinner[4] = "abcd";
+//    char progress;
+//    char spinner[4] = "abcd";
 
     // Refresh screen every (MODES_INTERACTIVE_REFRESH_TIME) miliseconde
     if (now < next_update)
@@ -141,8 +141,8 @@ void interactiveShowData(void) {
     }
 
 
- #   progress = spinner[(now / 1000) % 4];
- #   mvaddch(0, 79, progress);
+ //   progress = spinner[(now / 1000) % 4];
+ //   mvaddch(0, 79, progress);
 
     int rows = getmaxy(stdscr);
     int row = 2;
